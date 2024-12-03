@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myweb-dep
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: myweb-pod
+  template:
+    metadata:
+      labels:
+        app: myweb-pod
+    spec:
+      containers:
+      - name: myweb-con
+        image: allogdallog/myweb:1
