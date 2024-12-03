@@ -28,4 +28,4 @@ spec:
     spec:
       containers:
       - name: h-con
-        image: allogdallog/hnginx:latest
+        image: allogdallog/ipnginx:latest
